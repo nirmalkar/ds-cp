@@ -1,0 +1,3 @@
+[submodule "problem-solving"]
+	path = problem-solving
+	url = https://github.com/nirmalkar/problem-solving.git
