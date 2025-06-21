@@ -7,7 +7,6 @@
  * Input: [-2,-1,-1,0,1] Output: 4
  */
 
-
 /**
  * Algorithm
  * Create a function called countUniqueValues that accepts a sorted array (arr)
@@ -23,23 +22,23 @@
  */
 
 const countUniqueValues = (arr) => {
-    if (!arr.length) return 0
-    let p1 = 0
-    let p2 = 1
-    const tempArr = [arr[p1]]
+    if (!arr.length) return 0;
+    let p1 = 0;
+    let p2 = 1;
+    const tempArr = [arr[p1]];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[p1] !== arr[p2] && arr[p2] !== 'undefined') {
-            p1 = p2
-            tempArr.push(arr[p1])
+        if (arr[p1] !== arr[p2] && arr[p2] !== "undefined") {
+            p1 = p2;
+            tempArr.push(arr[p1]);
         }
-        p2 = i + 1
+        p2 = i + 1;
     }
-    return tempArr
-}
-const arr = [1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13] // Output: 7
-const arr2 = [-2, -1, -1, 0, 1]
-console.log("arr output: ", countUniqueValues(arr))
-console.log("arr1 output: ", countUniqueValues(arr2))
+    return tempArr;
+};
+const arr = [1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]; // Output: 7
+const arr2 = [-2, -1, -1, 0, 1];
+console.log("arr output: ", countUniqueValues(arr));
+console.log("arr1 output: ", countUniqueValues(arr2));
 
 /**
  * Time and space complexity
@@ -47,9 +46,8 @@ console.log("arr1 output: ", countUniqueValues(arr2))
  * Loop: iterates through arr, taking O(n)
  * if condition, updating pointers, pushing to the array has O(n)
  * So Overall time complexity will be O(n)
- * 
+ *
  * Space Complexity
- * let's say space complexity is like depends on the number of uniques elements in the array so, 
+ * let's say space complexity is like depends on the number of uniques elements in the array so,
  * if would be O(k) where the k is the number of unique elements in the array.
  */
-
