@@ -29,7 +29,7 @@ Implement the `WordDictionary` class with:
 **Input:**
 
 ```ts
-WordDictionary wordDict = new WordDictionary();
+wordDict = new WordDictionary();
 wordDict.addWord("bad");
 wordDict.addWord("dad");
 wordDict.addWord("mad");
